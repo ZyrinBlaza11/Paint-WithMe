@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<link rel="stylesheet" href="More.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		</head>
+		<body>
+			<div class="topnav">
+		<a class="active" 
+		<a href="blaza_Quarter2Proj.html">Home</a>
+		<a href="By Who.html">By Who</a>
+		<a href="How To.html">How To</a>
+		<a href="More.html">More</a>
+
+
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 10</div>
+			<img src="https://i.pinimg.com/564x/36/e0/e7/36e0e78e9c51bf5e0d076904534a6e05.jpg" style="width:100%">
+			<div class="text">This is The Monalisa</div>
+			</div>
+
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 10</div>
+			<img src="https://i.pinimg.com/474x/bd/2e/53/bd2e53d125404d411966de85ca0ded00.jpg" style="width:100%">
+			<div class="text">This is The Girl with the Pearl Earring</div>
+			</div>
+
+			<div class="mySlides fade">
+			<div class="numbertext">3 / 10</div>
+			<img src="https://i.pinimg.com/474x/8e/30/4a/8e304aac188acd1f61943e58752a2115.jpg" style="width:100%">
+			<div class="text">This is The Starry Night</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">4 / 10</div>
+			<img src="https://i.pinimg.com/474x/5f/96/8a/5f968a9ade80b909d7452e0172c2bde9.jpg" style="width:100%">
+			<div class="text">This is The Scream</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">5 / 10</div>
+			<img src="https://i.pinimg.com/474x/fd/6a/f2/fd6af220a11e8c4e4a78ea56346a328e.jpg" style="width:100%">
+			<div class="text">This is The Creation Of Adam</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">6 / 10</div>
+			<img src="https://i.pinimg.com/474x/fa/b3/cb/fab3cb753abfda6f30fc31df2be3f1e6.jpg" style="width:100%">
+			<div class="text">This is The Last Supper</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">7 / 10</div>
+			<img src="https://i.pinimg.com/474x/ae/7c/dd/ae7cddd7a8a8632a932c85917df35b05.jpg" style="width:100%">
+			<div class="text">This is The Lady with am Ermine</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">8 / 10</div>
+			<img src="https://i.pinimg.com/474x/f1/8f/36/f18f36096150debd37371531babef841.jpg" style="width:100%">
+			<div class="text">This is The Fallen Angel</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">9 / 10</div>
+			<img src="https://i.pinimg.com/474x/d2/0a/86/d20a86873c710e26e5feb35a2de070b8.jpg" style="width:100%">
+			<div class="text">This is The Son of Man</div>
+			</div>
+			<div class="mySlides fade">
+			<div class="numbertext">10 / 10</div>
+			<img src="https://i.pinimg.com/474x/32/9e/9d/329e9d5cfe387de6ef26d5aa7f119b37.jpg" style="width:100%">
+			<div class="text">This is The Great Wave of Kanagawa</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+		</script>
+
+	</body>
+</html> 
